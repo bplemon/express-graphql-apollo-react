@@ -1,0 +1,29 @@
+{
+  "name": "lemon",
+  "version": "1.0.0",
+  "description": "React bare bones with webpack start",
+  "main": "index.js",
+  "author": "blemon",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.4",
+    "graphql": "^15.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "dist": "webpack -p",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open"
+  }
+}

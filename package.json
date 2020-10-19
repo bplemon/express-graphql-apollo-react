@@ -1,19 +1,23 @@
 {
   "name": "express-graphql-basic",
   "version": "1.0.0",
-  "description": "Basic app uning express with graphql",
+  "description": "Basic app using express with graphql",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Brie Lemones",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.20.0",
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
-    "graphql": "^15.3.0"
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.5"
   }
 }
